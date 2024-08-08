@@ -13,10 +13,10 @@
 </head>
 <body>
     <div class="container">
-        <header>
+        <header role="banner">
             <img src="./images/logo.png" alt="logo">
             <nav>
-                <ul>
+                <ul aria-label="Links Inside The Page">
                     <li><a href="index.html" >Home</a></li>
                     <li><a href="about.html" >About</a></li>
                     <li><a href="contact.html" class="current">Contact</a></li>
@@ -29,10 +29,10 @@
         <div class="contactus">
             <h1>Contact Us</h1>
             <p>Have a question? Leave your information below and we will get back to you as soon as possible.</p>
-            <input type="text" placeholder="First Name">
-            <input type="text" placeholder="Last Name">
-            <input type="email" name="email" id="" placeholder="Email Address">
-            <textarea name="Message" placeholder="Message" ></textarea>
+            <input type="text" placeholder="First Name" aria-label="Enter Your First name">
+            <input type="text" placeholder="Last Name" aria-label="Enter Your Last name">
+            <input type="email" name="email" id="" placeholder="Email Address" autocomplete="given-name" aria-label="Enter Your Email">
+            <textarea name="Message" placeholder="Message" aria-label="Enter Your Message" ></textarea>
             <button>Send Message</button>
         </div>
 
@@ -41,18 +41,18 @@
             <img src="./images/logo.png" alt="logo">
             <div class="contact">
                 <h4>Contact Us</h4>
-                <p>(555)555-5555</p>
-                <p>contact@lumina.test</p>
-                <p>10 Main st Boston MA</p>
+                <p aria-label="Phone Number">(555)555-5555</p>
+                <p aria-label="Mail Adress">contact@lumina.test</p>
+                <p aria-label="Adress">10 Main st Boston MA</p>
             </div>
             <div class="socialmedia">
                 <h4>Follow Us</h4>
                 <div class="media">
-                    <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
-                    <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
-                    <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
-                    <a href="#"><i class="fab fa-pinterest fa-2x"></i></a>
-                    <a href="#"><i class="fab fa-tumblr fa-2x"></i></a>
+                    <a href="https://facebook.com" aria-label="Follow Us On facebook"><i class="fab fa-facebook fa-2x"></i></a>
+                    <a href="https://x.com" aria-label="Follow Us On x"><i class="fab fa-twitter fa-2x"></i></a>
+                    <a href="https://instagram.com" aria-label="Follow Us On instagram"><i class="fab fa-instagram fa-2x"></i></a>
+                    <a href="https://pinterest.com" aria-label="Follow Us On pinterest"><i class="fab fa-pinterest fa-2x"></i></a>
+                    <a href="https://tumblr.com" aria-label="Follow Us On tumblr"><i class="fab fa-tumblr fa-2x"></i></a>
                 </div>
             </div>
         </footer>
