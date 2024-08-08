@@ -172,6 +172,71 @@ footer{
     }
 }
 
+/* -----------------------Contact Page----------------------- */
+
+.contactmain{
+    text-align: center;
+    margin: 50px 0;
+    padding: 120px 10%;
+    background: #333;
+    color: white;
+
+    h1{
+        font-weight: normal;
+        padding: 10px;
+
+        span{
+            color: #333;
+            background: #fcf5e9;
+        }
+    }
+}
+.contactus{
+    max-width: 900px;
+    margin: auto;
+    padding: 0 30px;
+    margin-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+
+    p{
+        text-align: center;
+    }
+
+    input , textarea{
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid #333;
+        resize: none;
+        outline: none;
+        padding-bottom: 1rem ;
+        font-size: 16px;
+        font-family: inherit;
+        font-size: inherit;
+    }
+
+    textarea{
+        height: 175px;
+    }
+
+    button{
+        width: 100%;
+        background: white;
+        padding: 10px 0;
+        border: 1px solid #333;
+        font-size: 16px;
+        margin: 10px 0;
+    }
+}
+
+
+
+
+
+/* ----------------media ------------------------------- */
 
 @media ( max-width:768px){
 
@@ -232,5 +297,19 @@ footer{
         }
     }
 }
+/* ----------------contact page---------------- */
+.contactmain{
+    padding: 80px 30px ;
 
+    h1{
+        font-size: 28px;
+    }
+}
+.contactus{
+    
+    h1{
+        font-size: 28px;
+    }
+
+}
 }
