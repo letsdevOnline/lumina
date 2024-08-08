@@ -35,9 +35,16 @@ header{
                 text-decoration: none;
                 padding: 8px 16px;
             }
+            a:hover{
+                background: #fcf5e9;
+            }
+            .current{
+                background: #fcf5e9;
+            }
         }
     }
 }
+
 main{
     text-align: center;
     margin: 120px 0;
@@ -105,29 +112,125 @@ footer{
 }
 
 
+/* -----------------------About Page ------------------------*/
+.servicescontainer{
+    background: #333;
+    color: white;
+    font-size: 15px;
+    h2{
+        text-align: center;
+        padding: 40px 0 25px;
+        font-size: 1.7em;
+    }
+    
+    .service{
+        max-width: 1100px;
+        margin: auto;
+        padding: 55px 0;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .srv{
+        width: 28%;
+
+        h3{
+            margin: 0 0 5px 10px ;
+        }
+    }
+}
+.teamcontainer{
+
+    h2{
+        text-align: center;
+        padding: 40px 0 15px;
+        font-size: 1.7em;
+    }
+    
+    .team{
+        margin: auto;
+        padding: 30px 0;
+        display: flex;
+        justify-content: space-evenly;
+
+        .member{
+            width: 29%;
+    
+            h3{
+                font-size: 1.1em;
+                font-weight: 550;
+            }
+    
+            p{
+                font-size: 13px;
+            }
+    
+            img{
+                width: 100%;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
+
 @media ( max-width:768px){
 
-    main{
-        margin: 80px 0;
-
-        h1{
-            font-size: 35px;
-        }
-    }
-    section{    
-        a{
-            width: calc(50% - 15px);
-            gap: 5px;
-        }
-    }
-    footer{
-        margin: 40px 0 10px;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
     
-        .contact {
-            margin: 15px 0;
+header{
+    margin-top: 20px;
+    height: 80px;
+    flex-direction: column;
+}
+main{
+    margin: 80px 0;
+
+    h1{
+        font-size: 35px;
+    }
+}
+section{    
+    a{
+        width: calc(50% - 15px);
+        gap: 5px;
+    }
+}
+footer{
+    margin: 40px 0 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .contact {
+        margin: 15px 0;
+    }
+}
+/* -----------------------About Page ------------------------*/
+.servicescontainer{
+    h2{
+        padding: 40px 0 10px;
+    }
+    
+    .service{
+        flex-direction: column;
+        gap: 25px;
+        align-items: center;
+    }
+
+    .srv{
+        width: 90%;
+    }
+}
+.teamcontainer{
+
+    .team{
+        flex-direction: column;
+
+        .member{
+            width: 80%;
+            margin: auto;
+            margin-bottom: 25px;
         }
     }
+}
+
 }
